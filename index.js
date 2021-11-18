@@ -80,7 +80,6 @@ async function main() {
       await page.click("#dtItemsTable_next");
       await page.waitForNetworkIdle({ timeout: 0 });
 
-      await page.screenshot({ path: "example.png" });
       if (pageNumber === 5) continueToNextPage = false;
 
       pageNumber++;
