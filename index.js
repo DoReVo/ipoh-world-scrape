@@ -80,7 +80,7 @@ async function main() {
       await page.click("#dtItemsTable_next");
       await page.waitForNetworkIdle({ timeout: 0 });
 
-      if (pageNumber === 5) continueToNextPage = false;
+      if (pageNumber === 109) continueToNextPage = false;
 
       pageNumber++;
     } while (continueToNextPage);
